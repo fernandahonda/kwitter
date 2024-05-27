@@ -1,7 +1,9 @@
 class MarketingPagesController < ApplicationController
   layout false 
-  
-  def index
 
+  def index
+    if @current_user
+      redirect_to "/posts"
+    end
   end
 end

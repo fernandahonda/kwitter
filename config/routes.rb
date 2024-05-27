@@ -11,8 +11,4 @@ Rails.application.routes.draw do
   # Define the root route
   get("/", { :controller => "marketing_pages", :action => "index" })
 
-  # Content after login
-  get("/", { :controller => "posts", :action => "index" })
-
-
 end
